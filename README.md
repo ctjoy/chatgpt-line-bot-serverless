@@ -1,6 +1,10 @@
 # ChatGPT LINE bot with Serverless Framework
 
-You can talk to ChatGPT in LINE. The bot is deployed and running on AWS Lambda using the Serverless Framework.
+You can talk to ChatGPT in LINE. The bot is deployed and running on AWS Lambda using the Serverless Framework. You can find the tutorial [here](https://joychen.me/posts/chatgpt-line-bot-serverless/).
+
+<p align="center">
+    <img src="./assets/ChatGPT_LINE_bot.gif" width="800"/>
+</p>
 
 ## Credentials
 
