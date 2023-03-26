@@ -1,0 +1,25 @@
+service: chatgpt-line-bot-serverless
+
+frameworkVersion: "3"
+
+custom: ${file(./.env.yml)}
+
+provider:
+  name: aws
+  runtime: python3.8
+  environment:
+    OPENAI_KEY: ${self:custom.openaiKey}
+    LINE_CHANNEL_SECRET: ${self:custom.lineChannelSecret}
+    LINE_CHANNEL_ACCESS_TOKEN: ${self:custom.lineChannelAccessToken}
+
+functions:
+  LineBot:
+    timeout: 30
+    handler: main.lambda_handler
+    events:
+      - http:
+          path: /webhook
+          method: POST
+
+plugins:
+  - serverless-python-requirements

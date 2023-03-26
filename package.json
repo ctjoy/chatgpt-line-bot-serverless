@@ -1,0 +1,9 @@
+{
+  "name": "chatgpt-line-bot-serverlesst",
+  "version": "1.0.0",
+  "description": "A ChatGPT LINE bot with traditional Serverless Framework",
+  "author": "ctjoy",
+  "devDependencies": {
+    "serverless-python-requirements": "^6.0.0"
+  }
+}
